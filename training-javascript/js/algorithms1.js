@@ -1,7 +1,7 @@
 //EJERCICIO 1
-/* const fecha = new Date();
-let mes = fecha.getMonth();
-console.log(fecha) */
+/* let days = console.log(
+  new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0)
+); */
 //EJERCICIO 2
 /* let monthName = prompt("Please, write the chosen month.");
 switch (monthName) {
@@ -47,7 +47,7 @@ switch (monthName) {
 } */
 //EJERCICIO 3
 /* let temperature = prompt("Please, what is the temperature outside?.");
-console.log(temperature);
+console.log(typeof temperature);
 if (temperature < 15) {
   alert("Warm up");
 } else if (temperature ==15 || temperature <= 25) {
@@ -55,26 +55,78 @@ if (temperature < 15) {
 }
 else if (temperature > 25) {
   alert("Cool down")
-}
- */
+} */
 //EJERCICIO 4
-/* switch (isGreen) {
-  case "True":
-    console.log("Cross the road");
-    break;
-  case "False":
-    console.log("Please await");
-    break;
+/* let isGreen = false;
+if (isGreen) {
+  console.log("Cross the road");
+} else {
+  console.log("Please await");
 } */
 //EJERCICIO 5
+/* let temperature = "Absolute Zero";
+switch (temperature) {
+  case "Absolute Zero":
+    answer = (-273.15 * 9) / 5 + 32;
+    console.log(answer + "ºF");
+    break;
+  case "Freezing point":
+    answer = (0 * 9) / 5 + 32;
+    console.log(answer + "ºF");
+    break;
+  case "Body Temperature":
+    answer = (37 * 9) / 5 + 32;
+    console.log(answer + "ºF");
+    break;
+  case "Boiling point":
+    answer = (100 * 9) / 5 + 32;
+    console.log(answer + "ºF");
+    break;
+  default:
+    console.log("Temp not recog");
+    break;
+} */
 
 //EJERCICIO 6
-let email = "tolkien@lordofrings.com";
-let password = "aNBR6ZeWPY";
-let eMail = prompt ("Please insert your email")
-if(email == true && password == true) {
+/* let email = prompt("Please, insert your email");
+let password = prompt("Please, insert your password");
+if (email == "tolkien@lordofrings.com" && password == "aNBR6ZeWPY") {
   alert("Welcome Mr.Tolkien");
-}
-else{
-  alert("Wrong password or email")
+} else {
+  alert("Wrong password or email");
+} */
+
+//EJERCICIO 7
+/* let euros = prompt("Please, write your number");
+switch (euros) {
+  case euros:
+    console.log(
+      "son " +
+        euros * 0.97 +
+        " dólares, " +
+        euros * 141.59 +
+        " yenes, " +
+        euros * 0.88 +
+        " libras, " +
+        euros * 0.97 +
+        " francos."
+    );
+} */
+//EJERCICIO 8
+let n1, n2, n3;
+let suma, resta, multi, divide;
+n1 = prompt("Enter a number 1");
+n2 = prompt("Enter a number 2");
+n3 = prompt("Enter a operation");
+
+if (n3 == "suma") {
+  console.log(parseInt(n1) + parseInt(n2));
+} else if (n3 == "resta") {
+  console.log(parseInt(n1) - parseInt(n2));
+} else if (n3 == "multi") {
+  console.log(parseInt(n1) * parseInt(n2));
+} else if (n3 == "divide") {
+  console.log(parseInt(n1) / parseInt(n2));
+} else {
+  console.log("ERROR!");
 }
