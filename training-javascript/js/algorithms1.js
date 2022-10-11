@@ -175,15 +175,13 @@ if (validDocument && isDNI) {
  */
 
 //EJERCICIO 10
-let ramdomNumber1 = Math.floor(Math.random() * 6 + 1);
+/* let ramdomNumber1 = Math.floor(Math.random() * 6 + 1);
 let ramdomNumber2 = Math.floor(Math.random() * 6 + 1);
 
 if (ramdomNumber1 > ramdomNumber2) {
   console.log("Player 1 wins!");
 } else if (ramdomNumber1 < ramdomNumber2) {
   console.log("Player 2 wins!");
-}
-  else{
-    console.log("draw")
-  }
-
+} else {
+  console.log("draw");
+} */
