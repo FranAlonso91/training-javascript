@@ -113,7 +113,7 @@ switch (euros) {
     );
 } */
 //EJERCICIO 8
-let n1, n2, n3;
+/* let n1, n2, n3;
 let suma, resta, multi, divide;
 n1 = prompt("Enter a number 1");
 n2 = prompt("Enter a number 2");
@@ -130,3 +130,60 @@ if (n3 == "suma") {
 } else {
   console.log("ERROR!");
 }
+ */
+//EJERCICIO 9
+/* let doc = "A7654321Z".toLowerCase();
+let isDNI = true;
+let validDocument = true;
+if (doc.charCodeAt(0) == 116 || doc.charCodeAt(0) == 120) {
+  isDNI = false;
+}
+if (isDNI) {
+  for (let index = 0; index < doc.length; index++) {
+    if (index <= 7) {
+      if (doc.charCodeAt(index) < 48 || doc.charCodeAt(index) > 57) {
+        validDocument = false;
+      }
+    } else {
+      if (doc.charCodeAt(index) < 97 || doc.charCodeAt(index) > 122) {
+        validDocument = false;
+      }
+    }
+  }
+} else {
+  for (let index = 1; index < doc.length; index++) {
+    
+    if ( index <= 7) {
+      if (doc.charCodeAt(index) < 48 || doc.charCodeAt(index) > 57) {
+        validDocument = false;
+      }
+    } else {
+      if (doc.charCodeAt(index) < 97 || doc.charCodeAt(index) > 122) {
+        validDocument = false;
+      }
+    }
+  }
+}
+
+if (validDocument && isDNI) {
+  console.log("It is a valid DNI");
+} else if (validDocument) {
+  console.log("It is a valid NIE");
+} else {
+  console.log("not a valid document");
+}
+ */
+
+//EJERCICIO 10
+let ramdomNumber1 = Math.floor(Math.random() * 6 + 1);
+let ramdomNumber2 = Math.floor(Math.random() * 6 + 1);
+
+if (ramdomNumber1 > ramdomNumber2) {
+  console.log("Player 1 wins!");
+} else if (ramdomNumber1 < ramdomNumber2) {
+  console.log("Player 2 wins!");
+}
+  else{
+    console.log("draw")
+  }
+
