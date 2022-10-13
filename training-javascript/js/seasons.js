@@ -1,4 +1,4 @@
-let month = Enero;
+/* let month = Enero;
 let season = "Estacion desconocida"
 if(month == Enero || month == Febrero || month == Diciembre) {
  season == "Winter";
@@ -11,4 +11,4 @@ if(month == Enero || month == Febrero || month == Diciembre) {
 } else {
     season = "Valor incorrecto";
 }
-console.log (season);
+console.log (season); */

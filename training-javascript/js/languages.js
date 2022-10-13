@@ -1,4 +1,4 @@
-let lenguaje = prompt("Selecciona un lenguaje entre en | de | pt | po ");
+/* let lenguaje = prompt("Selecciona un lenguaje entre en | de | pt | po ");
 let answer;
 switch (lenguaje) {
   case "en":
@@ -21,3 +21,4 @@ switch (lenguaje) {
     console.log("Lenguage not chosen, using Spanish");
     break;
 }
+ */

@@ -49,8 +49,8 @@ let timer = setInterval(() => {
 }, 1000);
  */
 
-let limit = 10;
+/* let limit = 10;
 for(let counter=0; counter<=limit; counter++){
   console.log(counter);
 
-}
+} */

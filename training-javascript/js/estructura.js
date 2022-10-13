@@ -1,4 +1,4 @@
- let character = "Black Widow";
+/*  let character = "Black Widow";
 switch (character) {
   case "Captain America":
     power = "Indestructible shield";
@@ -16,5 +16,5 @@ switch (character) {
     console.log("Choose your hero!");
     break;
 }
-console.log(power);
+console.log(power); */
 
