@@ -1,9 +1,8 @@
-/* function compare(value1, value2) {
-  console.log("value1 vale: ",value1);
-  console.log("value2 vale: ",value2);
-} */
-
-/* function compare(value1, value2) {
+function compare(value1, value2) {
+  console.log("value1 vale: ", value1);
+  console.log("value2 vale: ", value2);
+}
+function compare(value1, value2) {
   console.log("working!");
   if (value1 < value2) {
     return -1;
@@ -13,12 +12,15 @@
     return 0;
   }
 }
+let result = compare(4, 3);
+console.log(result);
+compare(2, 3)
 
-let numbers = [0, 1, 5, 10, 15];
-let copyOfNumbers = [...numbers];
-let secondCopyOfNumbers = Array.from(numbers);
+// let numbers = [0, 1, 5, 10, 15];
+// let copyOfNumbers = [...numbers];
+// let secondCopyOfNumbers = Array.from(numbers);
 
-copyOfNumbers.reverse(); */
+// copyOfNumbers.reverse();
 
 /* console.log(numbers); */
 /* console.log(copyOfNumbers);
@@ -27,15 +29,15 @@ copyOfNumbers.reverse(); */
 /* secondCopyOfNumbers.sort(); */
 /* console.log(secondCopyOfNumbers); */
 
-/* let team = [ */ /* 
-  "Alice",
-  "Sebastian",
-  "Ismael",
-  "Juan",
-  "David Miró",
-  "David Calero",
-];
-team.sort(); */
+/* let team = [ */
+//   "Alice",
+//   "Sebastian",
+//   "Ismael",
+//   "Juan",
+//   "David Miró",
+//   "David Calero",
+// ];
+// team.sort(); */
 /* console.log(team); */
 /* secondCopyOfNumbers.sort(compare); */
 
