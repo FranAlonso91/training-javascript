@@ -64,12 +64,100 @@ console.log(judo);
 // let anotherPerson = JSON.parse(jsonText);
 // console.log(anotherPerson.lastName);
 
-let userName = prompt("Tell me your name");
-let phone = prompt("Tell me your phone number");
-localStorage.name = userName;
-localStorage.phone = phone;
+// let userName = prompt("Tell me your name");
+// let phone = prompt("Tell me your phone number");
+// localStorage.name = userName;
+// localStorage.phone = phone;
 
-console.log(localStorage.name);
-console.log(localStorage.phone);
+// console.log(localStorage.name);
+// console.log(localStorage.phone);
 
-localStorage.clear();
+// localStorage.clear();
+
+// let data = {
+//   userName,
+//   phone,
+// };
+// localStorage.data = JSON.stringify(data);
+// console.log(JSON.parse(localStorage.data));
+
+// "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIi
+// wiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c2";
+
+// let token =
+//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c2";
+// localStorage.setItem("token", token);
+// console.log(localStorage.getItem("token"));
+// localStorage.removeItem("token");
+// console.log(localStorage.getItem("token"));
+// let date = new Date().toString();
+// localStorage.date = date;
+// console.log(new Date(Date.parse(localStorage.date)));
+
+// date = new Date();
+// let loginTime =
+//   date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+// sessionStorage.setItem("logedAt", loginTime)
+// console.log(sessionStorage.getItem("logedAt"));
+
+// //JavaScript asíncrono
+// const sayHello = (userName) => {
+//   console.log("Hello " + userName);
+// };
+// const getUserName = (callback) => {
+//   let userName = prompt("Please, enter your name:");
+//   callback(userName);
+// };
+// // getUserName(sayHello);
+
+// let countDown = () => {
+//   console.log("ready?");
+//   let start = 0;
+//   let end = 0;
+//   for (let index = 5, count = 1; index >= 0; index--, count++) {
+//     start = new Date().getTime();
+//     console.log(start);
+//     setTimeout(() => {
+//       end = new Date().getTime();
+//       console.log(index == 0 ? "go!" : index);
+//       console.log(count);
+//       console.log(end - start, "ms");
+//     }, count * 1000);
+//   }
+// };
+// countDown();
+// console.log("Steady");
+
+let countDownHell = () => {
+  let start = 5;
+  setTimeout(() => {
+    console.log(start--);
+    setTimeout(() => {
+      console.log(start--);
+      setTimeout(() => {
+        console.log(start--);
+        setTimeout(() => {
+          console.log(start--);
+          setTimeout(() => {
+            console.log(start--);
+            setTimeout(() => {
+              console.log("Running!");
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 1000);
+};
+countDownHell();
+
+let doingSomething = (done) => {
+  new Promise((resolve, reject) => {
+    if (done) {
+      resolve(console.log("success"))
+    } else {
+      reject(err.message)
+    }
+  });
+};
+doingSomething(true)

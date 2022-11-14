@@ -1,20 +1,20 @@
-function compare(value1, value2) {
-  console.log("value1 vale: ", value1);
-  console.log("value2 vale: ", value2);
-}
-function compare(value1, value2) {
-  console.log("working!");
-  if (value1 < value2) {
-    return -1;
-  } else if (value1 > value2) {
-    return 1;
-  } else {
-    return 0;
-  }
-}
-let result = compare(4, 3);
-console.log(result);
-compare(2, 3)
+// function compare(value1, value2) {
+//   console.log("value1 vale: ", value1);
+//   console.log("value2 vale: ", value2);
+// }
+// function compare(value1, value2) {
+//   console.log("working!");
+//   if (value1 < value2) {
+//     return -1;
+//   } else if (value1 > value2) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// }
+// let result = compare(4, 3);
+// console.log(result);
+// compare(2, 3)
 
 // let numbers = [0, 1, 5, 10, 15];
 // let copyOfNumbers = [...numbers];
